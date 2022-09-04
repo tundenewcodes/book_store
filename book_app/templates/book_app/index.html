@@ -1,0 +1,8 @@
+{% extends 'book_app/base.html' %} {%block title%} all books{%endblock%} {%block content %}
+<ul>{%for book in books%}
+    <li>
+        <a href="{{ book.get_absolute_url }}">{{book.title}} </a> (rating - {{book.rating}})</li>{%endfor%}
+</ul>
+<hr>
+<p>total number of books :{{num_books}}</p>
+<p>average number of books : {{avg_books.rating__avg}}</p> {%endblock%}}

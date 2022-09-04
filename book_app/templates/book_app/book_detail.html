@@ -1,0 +1,5 @@
+{% extends 'book_app/base.html' %} {%block title%} {{title}}{%endblock%} {%block content %}
+<h1>{{title}}</h1>
+<h2>{{author}}</h2>
+<p>this book has a rating of {{rating}} {% if is_bestselling %} and the author is abestseller {%else%} but the author is not a best seller {%endif%}
+</p> {%endblock%}
